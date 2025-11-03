@@ -30,6 +30,6 @@ int main()
         pclose(fp); // Important to close the pipe
         sleep(2); // Wait 2 second before continuing
     }
-    free(array); // Frees the memory
+    free(array); // Frees the array
     return 0;
 }
