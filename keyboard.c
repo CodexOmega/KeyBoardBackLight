@@ -8,7 +8,7 @@ int main()
 {
     void *memset(void *s, int c, size_t n);
     int n = 10; // Set the size of the array
-    int *array = malloc(n * sizeof(int)); // Allocate memory for the array
+    int *array = malloc(n * sizeof(int)); // Allocate memory for the array.
 
     // Checking the array for errors
     if (array == NULL) {
@@ -20,7 +20,7 @@ int main()
 
     FILE *fp;
 
-    while (1) // Runs the "brighnessctl" command to set the backlight, --> brightnessctl must be installed via pacman
+    while (1) // Runs the "brighnessctl" command to set the backlight, --> brightnessctl must be installed via pacman!
     { 
         fp = popen("brightnessctl -d input7::scrolllock set 1", "w");
         if (fp == NULL) {
